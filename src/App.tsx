@@ -1,7 +1,8 @@
 import './App.css'
 import React from "react";
+import ComponentTest from "./components/ComponentTest.tsx";
 
-function App() {
+export function Bandera(){
     const handleCLick = (e) => {
         e.stopPropagation();
         alert(e.target.getAttribute('data-name'));
@@ -16,7 +17,15 @@ function App() {
             </div>
         </div>
     );
+}
 
+function App() {
+    return(
+        <div>
+            <ComponentTest></ComponentTest>
+        </div>
+
+    )
 }
 
 
